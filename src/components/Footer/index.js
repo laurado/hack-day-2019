@@ -4,7 +4,7 @@ import './style.scss'
 
 const Footer = ({ author, title }) => (
   <div className="footer">
-    <div className="container">
+    <div className="container text-center">
       <hr className="border-primary" />
       <p>{title}: Exploring gatsby.js by Lurrer and Dern</p>
     </div>
