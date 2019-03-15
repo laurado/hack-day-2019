@@ -1,11 +1,11 @@
-import React, { Fragment } from 'react'
-import { Link } from 'gatsby'
-import './style.scss'
+import React, { Fragment } from 'react';
+import { Link } from 'gatsby';
+import './style.scss';
 
 class Navi extends React.Component {
   render() {
-    const { location, title } = this.props
-    const pathname = window.location.pathname
+    const { location, title } = this.props;
+    const pathname = window.location.pathname;
 
     return (
       <Fragment>
@@ -27,29 +27,29 @@ class Navi extends React.Component {
                 </li>
                 <li
                   className={
-                    location.pathname === '/profile/'
+                    location.pathname === '/partners/'
                       ? 'nav-item active'
                       : 'nav-item'
                   }
                 >
-                  <Link to="/Profile/" className="nav-link">
+                  <Link to="/Partners/" className="nav-link">
                     Partners
                   </Link>
                 </li>
                 <li
                   className={
-                    location.pathname === '/profile/'
+                    location.pathname === '/history/'
                       ? 'nav-item active'
                       : 'nav-item'
                   }
                 >
-                  <Link to="/Profile/" className="nav-link">
+                  <Link to="/History/" className="nav-link">
                     History
                   </Link>
                 </li>
                 <li
                   className={
-                    location.pathname === '/profile/'
+                    location.pathname === '/team/'
                       ? 'nav-item active'
                       : 'nav-item'
                   }
@@ -76,6 +76,18 @@ class Navi extends React.Component {
               About Us
             </Link>
             <Link
+              className={pathname === '/Partners/' ? 'mx-2 selected' : 'mx-3'}
+              to="/Partners/"
+            >
+              Partners
+            </Link>
+            <Link
+              className={pathname === '/History/' ? 'mx-2 selected' : 'mx-3'}
+              to="/History/"
+            >
+              History
+            </Link>
+            <Link
               className={pathname === '/Team/' ? 'mx-2 selected' : 'mx-3'}
               to="/Team/"
             >
@@ -84,8 +96,8 @@ class Navi extends React.Component {
           </div>
         </section>
       </Fragment>
-    )
+    );
   }
 }
 
-export default Navi
+export default Navi;
