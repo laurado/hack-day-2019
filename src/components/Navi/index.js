@@ -71,7 +71,6 @@ class Navi extends React.Component {
                 </li>
               </ul>
             </div>
-            <div className="navbar-nav flex-row ml-md-auto d-none d-md-flex" />
           </div>
         </nav>
 
