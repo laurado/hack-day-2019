@@ -70,25 +70,25 @@ class Navi extends React.Component {
         >
           <div className="link-container">
             <Link
-              className={pathname === '/' ? 'mx-2 selected' : 'mx-3'}
+              className={pathname === '/' ? 'mx-3 selected' : 'mx-3'}
               to="/"
             >
               About Us
             </Link>
             <Link
-              className={pathname === '/Partners/' ? 'mx-2 selected' : 'mx-3'}
+              className={pathname === '/Partners/' ? 'mx-3 selected' : 'mx-3'}
               to="/Partners/"
             >
               Partners
             </Link>
             <Link
-              className={pathname === '/History/' ? 'mx-2 selected' : 'mx-3'}
+              className={pathname === '/History/' ? 'mx-3 selected' : 'mx-3'}
               to="/History/"
             >
               History
             </Link>
             <Link
-              className={pathname === '/Team/' ? 'mx-2 selected' : 'mx-3'}
+              className={pathname === '/Team/' ? 'mx-3 selected' : 'mx-3'}
               to="/Team/"
             >
               Team
