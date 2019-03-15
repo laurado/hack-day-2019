@@ -6,11 +6,10 @@ import Post from 'templates/Post'
 import Meta from 'components/Meta'
 import Layout from 'components/Layout'
 
-const BlogIndex = ({ data, location }) => {
+const Blog = ({ data, location }) => {
   const posts = get(data, 'remark.posts')
   return (
     <Layout location={location}>
-      <h1>I AM HERE</h1>
       <Meta site={get(data, 'site.meta')} />
       {posts.map(({ post }, i) => (
         <Post
@@ -25,10 +24,10 @@ const BlogIndex = ({ data, location }) => {
   )
 }
 
-export default BlogIndex
+export default Blog
 
 export const pageQuery = graphql`
-  query IndexQuery {
+  query BlogQuery {
     site {
       meta: siteMetadata {
         title
