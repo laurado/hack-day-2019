@@ -1,15 +1,17 @@
 ---
-title: Markdown 📝
+title: Writing Blogs in Markdown 📝
 date: "2015-05-28T22:40:32.169Z"
 layout: post
-path: "/markdown/"
-category: Typography
+path: "/writing-blogs/"
+category: Technology
 tags:
-  - Markdown
-  - Emoji
+  - So Easy!
+  - Marketing
 ---
 
-Paragraphs are separated by a blank line.
+Writing blog posts can be handled completely in **ONE** markdown file! 
+
+This makes it easy to manage content!
 
 2nd paragraph. _Italic_, **bold**, and `monospace`. Itemized lists
 look like:
@@ -22,17 +24,15 @@ look like:
 
 content starts at 4-columns in.
 
-> Block quotes are
-> written like so.
+> You can add block quotes!
 >
-> They can span multiple paragraphs,
-> if you like.
+> They can even span multiple paragraphs
 
 Use 3 dashes for an em-dash. Use 2 dashes for ranges (ex., "it's all
 in chapters 12--14"). Three dots ... will be converted to an ellipsis.
 Unicode is supported 😄
 
 ```js
-// javascript
+// you can do everything markdown can, including code blocks!
 console.log('Hello World!!')
 ```

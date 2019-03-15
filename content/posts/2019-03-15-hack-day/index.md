@@ -7,6 +7,7 @@ image: ./dern.png
 description: "Hack Day is a day when everyone explores a technology or project of their choosing."
 category: Technolgy
 tags:
+- FrontEnd
 - Hack Day
 - Pizza Lunch
 ---
