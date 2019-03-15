@@ -63,7 +63,7 @@ class History extends React.Component {
 
     return (
       <Layout location={location}>
-        <div className="pb-5">
+        <div className="pb-5 container">
           <h1 className="text-center pt-5">The Invaluable Story</h1>
 
           <div className="row">
