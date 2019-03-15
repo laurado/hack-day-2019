@@ -15,6 +15,13 @@ import {
   faTwitter,
   faVuejs,
 } from '@fortawesome/free-brands-svg-icons'
+import {
+  faBacon,
+  faIceCream,
+  faCheese,
+  faCookie,
+  faHotdog,
+} from '@fortawesome/free-solid-svg-icons'
 import './style.scss'
 
 library.add(
@@ -28,12 +35,17 @@ library.add(
   faPhp,
   faReact,
   faTwitter,
-  faVuejs
+  faVuejs,
+  faBacon,
+  faIceCream,
+  faCheese,
+  faCookie,
+  faHotdog
 )
 
-const Icon = ({ name }) => (
+const Icon = ({ prefix = 'fab', name }) => (
   <div className="icon" title={name}>
-    <FontAwesomeIcon icon={['fab', name]} />
+    <FontAwesomeIcon icon={[prefix, name]} />
   </div>
 )
 
