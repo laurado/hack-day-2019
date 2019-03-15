@@ -39,11 +39,8 @@ class Partners extends React.Component {
           <section className="text-center">
             <div className="row">
               {partnerList &&
-                partnerList.map(partner => (
-                  <div
-                    key={partner}
-                    className="mt-4 col-xs-12 col-sm-6 col-lg-4"
-                  >
+                partnerList.map((partner, index) => (
+                  <div key={index} className="mt-4 col-xs-12 col-sm-6 col-lg-4">
                     <Img fixed={partner} />
                   </div>
                 ))}
