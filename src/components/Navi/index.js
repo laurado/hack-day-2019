@@ -27,7 +27,7 @@ class Navi extends React.Component {
                 </li>
                 <li
                   className={
-                    location.pathname === '/partners/'
+                    location.pathname === '/Partners/'
                       ? 'nav-item active'
                       : 'nav-item'
                   }
@@ -38,7 +38,7 @@ class Navi extends React.Component {
                 </li>
                 <li
                   className={
-                    location.pathname === '/history/'
+                    location.pathname === '/History/'
                       ? 'nav-item active'
                       : 'nav-item'
                   }
@@ -49,13 +49,24 @@ class Navi extends React.Component {
                 </li>
                 <li
                   className={
-                    location.pathname === '/team/'
+                    location.pathname === '/Team/'
                       ? 'nav-item active'
                       : 'nav-item'
                   }
                 >
                   <Link to="/Team/" className="nav-link">
                     Team
+                  </Link>
+                </li>
+                <li
+                  className={
+                    location.pathname === '/Blog/'
+                      ? 'nav-item active'
+                      : 'nav-item'
+                  }
+                >
+                  <Link to="/Blog/" className="nav-link">
+                    Blog
                   </Link>
                 </li>
               </ul>
@@ -92,6 +103,12 @@ class Navi extends React.Component {
               to="/Team/"
             >
               Team
+            </Link>
+            <Link
+              className={pathname === '/Blog/' ? 'mx-3 selected' : 'mx-3'}
+              to="/Blog/"
+            >
+              Blog
             </Link>
           </div>
         </section>
