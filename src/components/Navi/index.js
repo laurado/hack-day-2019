@@ -1,42 +1,89 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import { Link } from 'gatsby'
+import './style.scss'
 
 class Navi extends React.Component {
   render() {
     const { location, title } = this.props
+    const pathname = window.location.pathname
+
     return (
-      <nav className="navbar navbar-expand navbar-dark flex-column flex-md-row bg-primary">
-        <div className="container">
-          <Link className="text-center" to="/">
-            <h1 className="navbar-brand mb-0">{title}</h1>
-          </Link>
-          <div className="navbar-nav-scroll">
-            <ul className="navbar-nav bd-navbar-nav flex-row">
-              <li
-                className={
-                  location.pathname === '/' ? 'nav-item active' : 'nav-item'
-                }
-              >
-                <Link to="/" className="nav-link">
-                  Home
-                </Link>
-              </li>
-              <li
-                className={
-                  location.pathname === '/profile/'
-                    ? 'nav-item active'
-                    : 'nav-item'
-                }
-              >
-                <Link to="/profile/" className="nav-link">
-                  Profile
-                </Link>
-              </li>
-            </ul>
+      <Fragment>
+        <nav className="navbar navbar-expand navbar-dark flex-column flex-md-row bg-primary">
+          <div className="container">
+            <Link className="text-center" to="/">
+              <h1 className="navbar-brand mb-0">{title}</h1>
+            </Link>
+            <div className="navbar-nav-scroll">
+              <ul className="navbar-nav bd-navbar-nav flex-row">
+                <li
+                  className={
+                    location.pathname === '/' ? 'nav-item active' : 'nav-item'
+                  }
+                >
+                  <Link to="/" className="nav-link">
+                    About Us
+                  </Link>
+                </li>
+                <li
+                  className={
+                    location.pathname === '/profile/'
+                      ? 'nav-item active'
+                      : 'nav-item'
+                  }
+                >
+                  <Link to="/Profile/" className="nav-link">
+                    Partners
+                  </Link>
+                </li>
+                <li
+                  className={
+                    location.pathname === '/profile/'
+                      ? 'nav-item active'
+                      : 'nav-item'
+                  }
+                >
+                  <Link to="/Profile/" className="nav-link">
+                    History
+                  </Link>
+                </li>
+                <li
+                  className={
+                    location.pathname === '/profile/'
+                      ? 'nav-item active'
+                      : 'nav-item'
+                  }
+                >
+                  <Link to="/Team/" className="nav-link">
+                    Team
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div className="navbar-nav flex-row ml-md-auto d-none d-md-flex" />
           </div>
-          <div className="navbar-nav flex-row ml-md-auto d-none d-md-flex" />
-        </div>
-      </nav>
+        </nav>
+
+        <section
+          id="about-banner"
+          className="d-flex justify-content-center align-items-end"
+        >
+          <div className="link-container">
+            <Link
+              className={pathname === '/' ? 'mx-2 selected' : 'mx-3'}
+              to="/"
+            >
+              About Us
+            </Link>
+            <Link
+              className={pathname === '/Team/' ? 'mx-2 selected' : 'mx-3'}
+              to="/Team/"
+            >
+              Team
+            </Link>
+          </div>
+        </section>
+      </Fragment>
     )
   }
 }
