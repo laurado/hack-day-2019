@@ -1,0 +1,20 @@
+#about-banner {
+  background-image: url("https://www.invaluable.com/wwwImages/about/Main-Image-min.png");
+  background-position: center;
+
+  .link-container {
+    a {
+      color: white;
+      font-weight: bold;
+      font-size: 1.5rem;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    .selected {
+      text-decoration: underline;
+    }
+  }
+}
+
+$primary: red;
