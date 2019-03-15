@@ -1,10 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatstrap',
-    description: 'Gatsby starter for bootstrap a blog',
-    siteUrl: 'https://gatstrap.netlify.com',
-    author: 'jaxx2104',
-    twitter: 'jaxx2104',
+    title: 'Hack Day 2019',
+    description: 'Gatsby Project for Hack Day 2019',
+    siteUrl: '',
+    author: 'ldo, dyouberg',
+    twitter: '',
     adsense: '',
   },
   pathPrefix: '/',
