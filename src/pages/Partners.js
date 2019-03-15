@@ -37,13 +37,18 @@ class Partners extends React.Component {
           </section>
 
           <section className="text-center">
-            <div className="row">
-              {partnerList &&
-                partnerList.map((partner, index) => (
-                  <div key={index} className="mt-4 col-xs-12 col-sm-6 col-lg-4">
-                    <Img fixed={partner} />
-                  </div>
-                ))}
+            <div className="container">
+              <div className="row">
+                {partnerList &&
+                  partnerList.map((partner, index) => (
+                    <div
+                      key={index}
+                      className="mt-4 col-xs-12 col-md-6 col-lg-4"
+                    >
+                      <Img fixed={partner} />
+                    </div>
+                  ))}
+              </div>
             </div>
           </section>
 
