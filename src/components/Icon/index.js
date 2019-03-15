@@ -21,6 +21,11 @@ import {
   faCheese,
   faCookie,
   faHotdog,
+  faPizzaSlice,
+  faPepperHot,
+  faGrinSquint,
+  faCoffee,
+  faBug,
 } from '@fortawesome/free-solid-svg-icons'
 import './style.scss'
 
@@ -40,7 +45,12 @@ library.add(
   faIceCream,
   faCheese,
   faCookie,
-  faHotdog
+  faHotdog,
+  faPizzaSlice,
+  faPepperHot,
+  faGrinSquint,
+  faCoffee,
+  faBug
 )
 
 const Icon = ({ prefix = 'fab', name }) => (
